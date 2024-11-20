@@ -13,7 +13,7 @@ public class HelloWorldService {
     private String configuredLanguage;
 
     //Sets a default message in case the 'native_hello_world' property is not found in the properties file
-    @Value("${native_hello_world}")
+    @Value("${native_hello_world: Hello world in spring!}")
     private String defaultMessage;
 
     @Value("${NL_hello_world}")
